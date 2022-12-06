@@ -1,0 +1,25 @@
+.cursor {
+  position: fixed;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  border-radius: 50%;
+  will-change: transform;
+  user-select: none;
+  pointer-events: none;
+  z-index: 10000;
+
+  border: 1px solid #f81894;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1);
+  color: #f81894;
+  text-align: center;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 470px) {
+  .cursor {
+    display: none;
+  }
+}

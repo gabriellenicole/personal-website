@@ -1,0 +1,41 @@
+#education {
+  font-family: 'Roboto Mono' !important;
+}
+
+@media screen and (max-width: 800px) {
+  .mobile {
+    flex-direction: column;
+    justify-content: flex-start;
+    p {
+      padding: 1px;
+    }
+  }
+}
+
+.hoverPink:hover {
+  border-color: #ff44cc;
+  box-shadow: 0 0 10px #ff44cc;
+  transition: 0.3s ease-in-out;
+  h2 {
+    text-shadow: 0 0 10px #ff44cc;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.hoverBlue:hover {
+  border-color: #15f4ee;
+  box-shadow: 0 0 10px #15f4ee;
+  transition: 0.3s ease-in-out;
+  h2 {
+    text-shadow: 0 0 10px #15f4ee;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.chakra-card {
+  transition: all 0.2s ease-in-out;
+}
+
+.chakra-card:hover {
+  transform: scale(1.03);
+}

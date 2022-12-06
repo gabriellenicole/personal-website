@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto+Mono:wght@400;500;600;700&display=swap');
+
+.home {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+  position: relative;
+
+  .shapes {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .shape {
+    will-change: transform;
+    position: absolute;
+    border-radius: 50%;
+
+    $shapes: (
+      #ff44cc: 550px,
+      #bc13fe: 340px,
+      #15f4ee: 170px,
+    );
+
+    @each $color, $size in $shapes {
+      &.shape-#{index($shapes, ($color $size))} {
+        background: $color;
+        width: $size;
+        height: $size;
+        margin: (-$size/2) 0 0 (-$size/2);
+      }
+    }
+  }
+
+  .text {
+    display: flex;
+    justify-content: center;
+    align-items: space-around;
+  }
+
+  .name {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: black;
+    mix-blend-mode: multiply;
+
+    h1 {
+      font-weight: 600;
+      color: white;
+      font-size: 15vw;
+      text-shadow: 1px 1px #ffffff;
+      margin: 0;
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: space-around;
+    height: 100vh;
+    width: 100vw;
+    background: #fcfcfc;
+    opacity: 0.15;
+  }
+
+  .description {
+    position: absolute;
+    top: 65vh;
+    width: 100vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-size: 20px;
+      color: white;
+      font-family: 'Roboto Mono', monospace;
+      font-weight: 100;
+      margin: 0px 70px;
+    }
+
+    span {
+      color: #ff44cc;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #home {
+    .name h1 {
+      font-size: 65px;
+    }
+    .description h2 {
+      font-size: 16px;
+    }
+    .shape {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+nav {
+  font-family: 'Roboto Mono';
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(40, 40, 40, 0.36);
+  backdrop-filter: blur(10px);
+  padding: 20px 40px;
+  margin: 0px auto;
+  left: 0px;
+  right: 0px;
+
+  .logo a {
+    font-size: 1.8em;
+    color: #15f4ee;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    list-style-type: none;
+  }
+
+  li {
+    padding: 0 20px;
+    position: relative;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+  }
+
+  li a:hover {
+    color: #ff44cc;
+    transition: 0.3s ease-in-out;
+  }
+
+  #mobile i {
+    color: white;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+  }
+
+  #mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  nav {
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: fixed;
+      top: 0px;
+      right: -200px;
+      width: 200px;
+      height: 100vh;
+      margin-top: 0px;
+      background-color: rgba(40, 40, 40, 0.9);
+      backdrop-filter: blur(100px);
+      padding: 100px 0 0 0;
+      z-index: -1;
+      transition: 0.3s ease-in-out;
+    }
+
+    ul.active {
+      right: 0px;
+      transition: 0.3s ease-in-out;
+    }
+
+    li {
+      margin-bottom: 25px;
+    }
+
+    #mobile {
+      display: block;
+    }
+
+    #mobile i {
+      font-size: 24px;
+      cursor: pointer;
+      z-index: 100;
+    }
+  }
+}
