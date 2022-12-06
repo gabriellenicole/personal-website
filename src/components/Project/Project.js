@@ -1,19 +1,20 @@
 import React from 'react'
-import { SimpleGrid, Flex } from '@chakra-ui/react'
+import { SimpleGrid, Flex, Heading } from '@chakra-ui/react'
 import ProjectCard from './ProjectCard'
+import PINTUApp from '../../assets/PINTUApp.png'
+import SpotifyHitlist from '../../assets/SpotifyHitlist.png'
 
 export default function Project() {
   const projects = [
     {
-      imgUrl:
-        'https://i.pinimg.com/originals/bc/13/ae/bc13aeda287f8b812ee4b48c64209ae4.png',
-      title: 'Project 1',
-      description: 'lorem ipsum lorem ipsum',
+      imgUrl: PINTUApp,
+      title: 'PINTU App',
+      description: 'UI/UX Design',
     },
     {
-      imgUrl: 'imgURL',
-      title: 'Project 2',
-      description: 'lorem ipsum lorem ipsum',
+      imgUrl: SpotifyHitlist,
+      title: 'Spotify Hitlist Predictor',
+      description: 'Machine Learning',
     },
     {
       imgUrl: 'imgURL',
@@ -31,15 +32,35 @@ export default function Project() {
       <Flex
         bg='#262626'
         w='full'
-        h='100vh'
         justifyContent='center'
         alignItems='center'
+        paddingBottom={'10vh'}
       >
-        <SimpleGrid minChildHeight='120px' spacing={10} columns={2}>
-          {projects.map((project, index) => {
-            return <ProjectCard key={index} {...project}></ProjectCard>
-          })}
-        </SimpleGrid>
+        <Flex
+          width='70vw'
+          direction='column'
+          rowGap='3vw'
+          justifyContent='center'
+        >
+          <Heading
+            fontSize='3em'
+            color='white'
+            textAlign='center'
+            letterSpacing='1px'
+            paddingTop='10vh'
+            paddingBottom='20px'
+          >
+            Projects
+          </Heading>
+          <SimpleGrid
+            spacing={6}
+            templateColumns='repeat(auto-fill, minmax(400px, 1fr))'
+          >
+            {projects.map((project, index) => {
+              return <ProjectCard key={index} {...project}></ProjectCard>
+            })}
+          </SimpleGrid>
+        </Flex>
       </Flex>
     </div>
   )

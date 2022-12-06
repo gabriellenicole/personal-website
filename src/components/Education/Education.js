@@ -26,6 +26,7 @@ export default function Education() {
             color='white'
             textAlign='center'
             letterSpacing='1px'
+            paddingBottom='20px'
           >
             Education
           </Heading>

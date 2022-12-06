@@ -14,21 +14,16 @@ import './ProjectCard.scss'
 
 export default function ProjectCard({ imgUrl, title, description }) {
   return (
-    <Card
-      maxW='sm'
-      variant='filled'
-      color='blackAlpha.900'
-      className='project-card'
-    >
-      <CardBody>
-        <Image src={imgUrl} alt='ProjectPhoto' borderRadius='lg' />
+    <Card variant='filled' className='project-card'>
+      <CardBody px={0} py={0}>
+        <Image src={imgUrl} alt='ProjectPhoto' borderTopRadius='lg' />
       </CardBody>
       <CardFooter>
-        <Stack mt='6' spacing='3'>
+        <Stack spacing='3'>
           <Heading size='md' color={'white'}>
             {title}
           </Heading>
-          <Text>{description}</Text>
+          <Text color={'whiteAlpha.700'}>{description}</Text>
         </Stack>
       </CardFooter>
     </Card>
