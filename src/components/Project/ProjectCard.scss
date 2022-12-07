@@ -1,3 +1,19 @@
 .project-card {
-  background-color: #2b2b2b;
+  background-color: #2b2b2b !important;
+}
+
+@media screen and (max-width: 500px) {
+  .project-card-flex {
+    width: 90vw !important;
+  }
+}
+
+.project-card-image {
+  transition: all 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  .project-card-image {
+    transform: scale(1.05);
+  }
 }

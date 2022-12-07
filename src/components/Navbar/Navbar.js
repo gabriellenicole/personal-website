@@ -26,9 +26,9 @@ export default function Navbar() {
             <li>
               <a href='#project'>&lt;project&gt;</a>
             </li>
-            <li>
+            {/* <li>
               <a href='#about'>&lt;about&gt;</a>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div id='mobile' onClick={handleClick}>

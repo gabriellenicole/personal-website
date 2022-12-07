@@ -35,7 +35,7 @@ export default function Education() {
             overflow='hidden'
             variant='outline'
             size='lg'
-            className='hoverPink'
+            className='education-card hoverPink'
           >
             <Stack width='70vw'>
               <CardBody>
@@ -66,7 +66,7 @@ export default function Education() {
             variant='outline'
             overflow='hidden'
             size='lg'
-            className='hoverBlue'
+            className='education-card hoverBlue'
           >
             <Stack width='70vw'>
               <CardBody>

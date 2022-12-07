@@ -15,6 +15,7 @@ import './App.css'
 
 //chakra
 import { extendTheme } from '@chakra-ui/react'
+import About from './components/About/About'
 
 function App() {
   const theme = extendTheme({
