@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/personal-website/static/css/main.93e94ca0.css",
-    "main.js": "/personal-website/static/js/main.666ec5e6.js",
+    "main.js": "/personal-website/static/js/main.25ab2fd5.js",
     "static/media/PINTUApp.png": "/personal-website/static/media/PINTUApp.62b5948fa94c5a6419f6.png",
     "static/media/SpotifyHitlist.png": "/personal-website/static/media/SpotifyHitlist.cefb0d9f245823836691.png",
+    "static/media/SudoGO.png": "/personal-website/static/media/SudoGO.7b3095e9fc9557a34aa0.png",
     "index.html": "/personal-website/index.html",
     "main.93e94ca0.css.map": "/personal-website/static/css/main.93e94ca0.css.map",
-    "main.666ec5e6.js.map": "/personal-website/static/js/main.666ec5e6.js.map"
+    "main.25ab2fd5.js.map": "/personal-website/static/js/main.25ab2fd5.js.map"
   },
   "entrypoints": [
     "static/css/main.93e94ca0.css",
-    "static/js/main.666ec5e6.js"
+    "static/js/main.25ab2fd5.js"
   ]
 }
