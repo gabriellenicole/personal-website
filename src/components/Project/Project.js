@@ -3,7 +3,7 @@ import { SimpleGrid, Flex, Heading } from '@chakra-ui/react'
 import ProjectCard from './ProjectCard'
 import PINTUApp from '../../assets/PINTUApp.png'
 import SpotifyHitlist from '../../assets/SpotifyHitlist.png'
-import TheWeatherApp from '../../assets/TheWeatherApp.png'
+import SudoGO from '../../assets/SudoGO.png'
 import './ProjectCard.scss'
 
 export default function Project() {
@@ -21,10 +21,10 @@ export default function Project() {
       description: 'Machine Learning',
     },
     {
-      imgUrl: TheWeatherApp,
-      link: 'https://github.com/gabriellenicole/spotify-hitlist',
-      title: 'The Weather App',
-      description: 'Javascript Project',
+      imgUrl: SudoGO,
+      link: 'https://github.com/gabriellenicole/sudoku-game',
+      title: 'SudoGO: Sudoku Game',
+      description: 'Java OOP Project',
     },
   ]
   return (
