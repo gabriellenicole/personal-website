@@ -15,7 +15,6 @@ import './App.css'
 
 //chakra
 import { extendTheme } from '@chakra-ui/react'
-import About from './components/About/About'
 
 function App() {
   const theme = extendTheme({
@@ -28,7 +27,6 @@ function App() {
     document.addEventListener('mousemove', (e) => {
       const mouseX = e.clientX
       const mouseY = e.clientY
-      console.log(mouseX, mouseY)
 
       gsap.to('.shape', {
         x: mouseX,

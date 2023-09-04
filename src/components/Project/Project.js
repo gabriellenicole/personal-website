@@ -4,10 +4,24 @@ import ProjectCard from './ProjectCard'
 import PINTUApp from '../../assets/PINTUApp.png'
 import SpotifyHitlist from '../../assets/SpotifyHitlist.png'
 import SudoGO from '../../assets/SudoGO.png'
+import SmackEcommerce from '../../assets/SmackEcommerce.png'
+import Tweedle from '../../assets/Tweedle.png'
 import './ProjectCard.scss'
 
 export default function Project() {
   const projects = [
+    {
+      imgUrl: SmackEcommerce,
+      link: 'https://github.com/gabriellenicole/smack-ecommerce',
+      title: 'Smack: Ecommerce Website',
+      description: 'Full Stack Development',
+    },
+    {
+      imgUrl: Tweedle,
+      link: 'https://github.com/matthewdinata/tweedle-app',
+      title: 'Tweedle: Social Media Platform',
+      description: 'Full Stack Development',
+    },
     {
       imgUrl: PINTUApp,
       link: 'http://app.pintusingapura.org',

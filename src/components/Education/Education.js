@@ -20,7 +20,7 @@ export default function Education() {
         justifyContent='center'
         alignItems='center'
       >
-        <Flex width='70vw' direction='column' rowGap='3vw'>
+        <Flex width='70vw' direction='column' rowGap='3vh'>
           <Heading
             fontSize='3em'
             color='white'
@@ -55,8 +55,8 @@ export default function Education() {
               <CardFooter>
                 <Text py='1' color='white'>
                   Relevant Courses: Object Oriented Programming, Data Structure
-                  and Algorithm, Introduction to Data Science and Artifical
-                  Intelligence
+                  and Algorithm, Introduction to Design and Project, Software
+                  Engineering
                 </Text>
               </CardFooter>
             </Stack>
@@ -71,14 +71,18 @@ export default function Education() {
             <Stack width='70vw'>
               <CardBody>
                 <Heading size='md' color='#15f4ee' py='5px'>
-                  St. Louis 1 Senior High School
+                  Virtual Learning Development
                 </Heading>
-                <Flex justifyContent='space-between' className='mobile'>
+                <Flex direction='column' mt='15px'>
                   <Text py='1' color='white'>
-                    Natural Science
+                    LinkedIn Learning: JavaScript Essential Training
                   </Text>
                   <Text py='1' color='white'>
-                    Jul 2019 - Jun 2021
+                    freeCodeCamp: Legacy Responsive Web Design, JavaScript
+                    Algorithm and Data Structures
+                  </Text>
+                  <Text py='1' color='white'>
+                    Udemy : Build Web Apps with React & Firebase
                   </Text>
                 </Flex>
               </CardBody>

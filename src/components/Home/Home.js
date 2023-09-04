@@ -16,8 +16,7 @@ export default function Home() {
         </div>
         <div className='description'>
           <h2>
-            a sophomore student whose passionate about <span>tech</span> and{' '}
-            <span>design</span> industry
+            transforming the <span>mundane</span> to <span>extraordinary</span>
           </h2>
         </div>
       </div>
